@@ -25,9 +25,7 @@ Nightwatch includes support for automatically managing the following services:
 ChromeDriver
 for running tests against the Chrome browser;
 download url: https://sites.google.com/a/chromium.org/chromedriver/downloads.
-GeckoDriver
-for running tests against the Mozilla Firefox browser;
-download url: https://github.com/mozilla/geckodriver/releases.
+
 
 # How to run tests?
 
