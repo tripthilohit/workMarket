@@ -25,7 +25,7 @@ Nightwatch includes support for automatically managing the following services:
 ChromeDriver
 for running tests against the Chrome browser;
 download url: https://sites.google.com/a/chromium.org/chromedriver/downloads.
-
+(Binary file for Mac already in the project file workMarket/Selenium)
 
 # How to run tests?
 
