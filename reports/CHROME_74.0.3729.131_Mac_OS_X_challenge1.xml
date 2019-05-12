@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="7">
+
+  <testsuite name="challenge1"
+    errors="0" failures="0" hostname="" id="" package="challenge1" skipped="0"
+    tests="7" time="35.69" timestamp="">
+  
+    <testcase name="reDirectToLoginScreen" classname="challenge1" time="1.357" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="verifyLoginScreenElements" classname="challenge1" time="0.4540" assertions="23">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="verifyValidationsWithInvalidCredentials" classname="challenge1" time="18.21" assertions="11">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="verifyWithExisistingEmail" classname="challenge1" time="6.736" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="verifyWithValidCredentialsCompany" classname="challenge1" time="6.526" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="reDirectToLoginScreen2" classname="challenge1" time="1.646" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="verifyWithValidCredentialsIndividual" classname="challenge1" time="0.7600" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

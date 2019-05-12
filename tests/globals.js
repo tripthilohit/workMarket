@@ -8,20 +8,20 @@ userEmail: 'qa+candidatetest@workmarket.com',
   searchTalentValue3: 'TEST',
   firstName: 'first',
   lastName: 'last',
-  validCompanyEmail: 'company111@yopmail.com',
+  validCompanyEmail: 'company116@yopmail.com',
   invalidCompanyEmail: 'companyEmail',
   existingCompanyEmail: 'company@yopmail.com',
   validPassword: 'General123$',
   invalidPassword: 'abcfg',
   companyName: 'WorkMarket',
-  validIndividualEmail: 'individual111@yopmail.com',
+  validIndividualEmail: 'individual116@yopmail.com',
   invalidIndividualEmail: 'individualEmail'
 }
 
 module.exports = {
   
   userNames: userNames,
-  waitForConditionPollInterval: 500,
+  waitForConditionPollInterval: 2000,
 
   // default timeout value in milliseconds for waitFor commands and implicit waitFor value for
   // expect assertions
@@ -44,7 +44,7 @@ module.exports = {
   customReporterCallbackTimeout: 20000,
 
   // Automatically retrying failed assertions - You can tell Nightwatch to automatically retry failed assertions until a given timeout is reached, before the test runner gives up and fails the test.
-  retryAssertionTimeout: 1000
+  retryAssertionTimeout: 2000
 
 
 };

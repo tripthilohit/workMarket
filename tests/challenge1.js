@@ -59,24 +59,29 @@ var verifyValidationsWithInvalidCredentials = function(driver)
 	.click("//input[@id='companyName']")
 	.setValue("//input[@id='companyName']",driver.globals.userNames.companyName)
 	.click("//div[@id='industryId']")
+	.waitForElementVisible("//div[contains(text(),'Technology and Communications')]",2000)
 	.click("//div[contains(text(),'Technology and Communications')]")
-	.click("//input[@type='checkbox']")
+	.pause(3000)
+	.click("//div/input[@type='checkbox']")
+	.execute('scrollTo(100,100)')
 	//verify if the 'Register' button is still disabled
 	.verify.attributeEquals("//button[@data-component-identifier='wm-validating-form__submit']","tabindex","-1")
+	.pause(2000)
+	.waitForElementVisible("//div[contains(text(),'Please enter a valid company email')]",2000)
 	.verify.elementPresent("//div[contains(text(),'Please enter a valid company email')]") //check for email field validity
 	.verify.elementPresent("//div[contains(text(),'Please enter a valid password')]") //check for password field validity
+	.execute('scrollTo(0,0)')
 	//Verify validations for 'Join as an individual' section
+	.waitForElementVisible("//button/div/div/span[contains(text(),'Join as an individual')]")
 	.click("//button/div/div/span[contains(text(),'Join as an individual')]")
 	.waitForElementVisible("//input[@id='email']")
-	.click("//input[@id='email']")
-	.setValue("//input[@id='email']",driver.globals.userNames.invalidIndividualEmail)
-	.click("//input[@id='password']")
-	.setValue("//input[@id='password']",driver.globals.userNames.invalidPassword)
-	//verify if the 'Register' button is still disabled
 	.verify.attributeEquals("//button[@data-component-identifier='wm-validating-form__submit']","tabindex","-1")
-	.verify.elementPresent("//div[contains(text(),'Please enter a valid company email')]") //check for email field validity
+	.pause(2000)
+	.waitForElementVisible("//div[contains(text(),'Please enter a valid  email')]",2000)
+	.verify.elementPresent("//div[contains(text(),'Please enter a valid  email')]") //check for email field validity
 	.verify.elementPresent("//div[contains(text(),'Please enter a valid password')]") //check for password field validity
-
+	
+	.pause(10000)
 }
 
 
