@@ -1,9 +1,21 @@
 var userNames = {
+  registrationURL: 'https://dev.workmarket.com/register/campaign/10081C503B209A0C8E7F05FDCC1AA98D4C904DEEF5F73265CAE38C744E7EAD3E',
   loginURL: 'http://dev.workmarket.com/login',
 userEmail: 'qa+candidatetest@workmarket.com',
   password: 'candidate123',
   searchTalentValue1: 'test',
-  searchTalentValue2: 'Test'
+  searchTalentValue2: 'Test',
+  searchTalentValue3: 'TEST',
+  firstName: 'first',
+  lastName: 'last',
+  validCompanyEmail: 'company11@yopmail.com',
+  invalidCompanyEmail: 'companyEmail',
+  existingCompanyEmail: 'company@yopmail.com',
+  validPassword: 'General123$',
+  invalidPassword: 'abcfg',
+  companyName: 'WorkMarket',
+  validIndividualEmail: 'individual7@yopmail.com',
+  invalidIndividualEmail: 'individualEmail'
 }
 
 module.exports = {

@@ -1,10 +1,13 @@
+//Test Login page
 var login = function(driver)
-{		
+{	
+//This module logins to the WorkMarket's website using credentials that the user has set in the global.js file
 	driver
 	.url(driver.globals.userNames.loginURL)
     .windowMaximize("current")
     .waitForElementVisible('body', 2000)
     .useXpath()
+    .verify.title('WorkMarket Login')
     .waitForElementVisible("//input[@id='login-email']")
     .click("//input[@id='login-email']")
     .setValue("//input[@id='login-email']",driver.globals.userNames.userEmail)
@@ -17,7 +20,8 @@ var login = function(driver)
 }
 
 var findTalent = function(driver)
-{
+{   
+//This module searches for the specific text that was set in globals.js file
     var assert = require('assert');
    var isTextFound = false;
     driver
@@ -33,6 +37,26 @@ var findTalent = function(driver)
     .verify.containsText("(//a[@class='profile-card--name open-user-profile-popup'])[2]",driver.globals.userNames.searchTalentValue1)
 }
 
+var searchCriteria = function(driver)
+{   
+//This module verifies, if all the search results contain the search criteria value that was set in globals.js by the user
+    function serachCriteriaResults(elements) {
+      console.log('Number of results: ' + elements.value.length);
+
+      elements.value.forEach(function (element,i) {
+        driver.elementIdText(element.ELEMENT, function (res) {
+            result = res.value
+            if(result.includes(driver.globals.userNames.searchTalentValue1)||result.includes(driver.globals.userNames.searchTalentValue2)||result.includes(driver.globals.userNames.searchTalentValue3))
+                console.log("True, result "+(i+1)+" contains the search criteria '"+driver.globals.userNames.searchTalentValue1+"'")
+            else
+                
+                console.log("False, result "+(i+1)+"  does NOT contain the search criteria '"+driver.globals.userNames.searchTalentValue1+"'")
+            
+        });
+      });
+    }
+      driver.elements('xpath', "//div[@class='profile-card--details']", serachCriteriaResults)
+}
 
 
 
@@ -40,27 +64,5 @@ module.exports={
 
 	login:login,
 	findTalent: findTalent,
-    'getElements': function (driver) {
-
-    function getInfo(elements) {
-      console.log('Number of results: ' + elements.value.length);
-
-      elements.value.forEach(function (element,i) {
-        driver.elementIdText(element.ELEMENT, function (res) {
-            result = res.value
-            if(result.includes(driver.globals.userNames.searchTalentValue1)||result.includes(driver.globals.userNames.searchTalentValue2))
-                console.log("True, result "+(i+1)+" contains the search criteria '"+driver.globals.userNames.searchTalentValue1+"'")
-            else
-                
-                console.log("False, result "+(i+1)+" contains the search criteria '"+driver.globals.userNames.searchTalentValue1+"'")
-            //console.log('RESULT ' + element.ELEMENT + '\n', res.value);
-            
-        });
-      });
-    }
-
-
-      //driver.elements('xpath', "//h2[@class='profile-card--header']", getInfo)
-      driver.elements('xpath', "//div[@class='profile-card--details']", getInfo)
-  }
+    searchCriteria: searchCriteria   
 }
