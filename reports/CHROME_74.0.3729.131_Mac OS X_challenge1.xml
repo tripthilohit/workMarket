@@ -5,14 +5,14 @@
 
   <testsuite name="challenge1"
     errors="0" failures="0" hostname="" id="" package="challenge1" skipped="0"
-    tests="7" time="17.78" timestamp="Sun, 12 May 2019 06:46:46 GMT">
+    tests="7" time="17.45" timestamp="Sun, 12 May 2019 19:36:07 GMT">
   
-    <testcase name="reDirectToLoginScreen" classname="challenge1" time="1.917" assertions="1">
+    <testcase name="reDirectToLoginScreen" classname="challenge1" time="3.039" assertions="1">
 
     
     </testcase>
   
-    <testcase name="verifyLoginScreenElements" classname="challenge1" time="0.8340" assertions="23">
+    <testcase name="verifyLoginScreenElements" classname="challenge1" time="0.5690" assertions="23">
 
     
 
@@ -45,23 +45,6 @@
     
 
     
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="verifyValidationsWithInvalidCredentials" classname="challenge1" time="1.150" assertions="7">
 
     
 
@@ -78,7 +61,13 @@
     
     </testcase>
   
-    <testcase name="verifyWithExisistingEmail" classname="challenge1" time="4.728" assertions="4">
+    <testcase name="verifyValidationsWithInvalidCredentials" classname="challenge1" time="1.310" assertions="7">
+
+    
+
+    
+
+    
 
     
 
@@ -89,7 +78,7 @@
     
     </testcase>
   
-    <testcase name="verifyWithValidCredentialsCompany" classname="challenge1" time="6.656" assertions="4">
+    <testcase name="verifyWithExisistingEmail" classname="challenge1" time="4.702" assertions="4">
 
     
 
@@ -100,12 +89,23 @@
     
     </testcase>
   
-    <testcase name="reDirectToLoginScreen2" classname="challenge1" time="1.745" assertions="1">
+    <testcase name="verifyWithValidCredentialsCompany" classname="challenge1" time="6.546" assertions="4">
+
+    
+
+    
+
+    
 
     
     </testcase>
   
-    <testcase name="verifyWithValidCredentialsIndividual" classname="challenge1" time="0.7510" assertions="3">
+    <testcase name="reDirectToLoginScreen2" classname="challenge1" time="0.5250" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="verifyWithValidCredentialsIndividual" classname="challenge1" time="0.7610" assertions="3">
 
     
 

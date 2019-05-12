@@ -8,13 +8,13 @@ userEmail: 'qa+candidatetest@workmarket.com',
   searchTalentValue3: 'TEST',
   firstName: 'first',
   lastName: 'last',
-  validCompanyEmail: 'company11@yopmail.com',
+  validCompanyEmail: 'company111@yopmail.com',
   invalidCompanyEmail: 'companyEmail',
   existingCompanyEmail: 'company@yopmail.com',
   validPassword: 'General123$',
   invalidPassword: 'abcfg',
   companyName: 'WorkMarket',
-  validIndividualEmail: 'individual7@yopmail.com',
+  validIndividualEmail: 'individual111@yopmail.com',
   invalidIndividualEmail: 'individualEmail'
 }
 

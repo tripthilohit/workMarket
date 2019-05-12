@@ -5,9 +5,9 @@
 
   <testsuite name="challenge2"
     errors="0" failures="0" hostname="" id="" package="challenge2" skipped="0"
-    tests="3" time="13.15" timestamp="Sun, 12 May 2019 01:51:05 GMT">
+    tests="3" time="13.56" timestamp="Sun, 12 May 2019 19:49:49 GMT">
   
-    <testcase name="login" classname="challenge2" time="3.855" assertions="5">
+    <testcase name="login" classname="challenge2" time="4.259" assertions="5">
 
     
 
@@ -20,7 +20,7 @@
     
     </testcase>
   
-    <testcase name="findTalent" classname="challenge2" time="5.689" assertions="6">
+    <testcase name="findTalent" classname="challenge2" time="5.425" assertions="6">
 
     
 
@@ -35,7 +35,7 @@
     
     </testcase>
   
-    <testcase name="searchCriteria" classname="challenge2" time="3.611" assertions="0">
+    <testcase name="searchCriteria" classname="challenge2" time="3.873" assertions="0">
     </testcase>
   
 
