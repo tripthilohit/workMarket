@@ -49,7 +49,7 @@ node nightwatch.js tests/test2.js
 
 ## Challenge 1
 
-
+<img width="990" alt="Screen Shot 2019-05-12 at 3 45 01 PM" src="https://user-images.githubusercontent.com/38136831/57587061-f68b8580-74cc-11e9-933f-b7f8d2370e09.png">
 
 ## Challenge 2
 
