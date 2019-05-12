@@ -13,7 +13,7 @@ $ npm install nightwatch
 ```
 From GitHub:
 ```sh
-$ git clone hhttps://github.com/tripthilohit/ww.git
+$ https://github.com/tripthilohit/workMarket.git
 $ cd ww
 $ npm install
 ```
