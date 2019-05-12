@@ -14,7 +14,7 @@ $ npm install nightwatch
 From GitHub:
 ```sh
 $ https://github.com/tripthilohit/workMarket.git
-$ cd ww
+$ cd workMarket
 $ npm install
 ```
 # Download WebDriver
