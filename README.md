@@ -31,16 +31,16 @@ download url: https://github.com/mozilla/geckodriver/releases.
 
 # How to run tests?
 
-1. Change the root path of the runner.js in nightwatch.js file (./ww/nightwatch.js)
+1. Change the root path of the runner.js in nightwatch.js file (./workMarket/nightwatch.js)
 In order to run the driver succesfully make sure you have changed runner.js root path in nightwatch.js file.
 
-2. Change the user data (if required)in globals.js file (./ww/tests/globals.js)
+2. Change the user data (if required)in globals.js file (./workMarket/tests/globals.js)
 
-3. Start a selenium server by opening a terminal and cd into the folder that contains the chrome driver (.ww/selenium)
+3. Start a selenium server by opening a terminal and cd into the folder that contains the chrome driver (.workMarket/selenium)
   ```sh
   java -jar selenium.jar
   ```
-4. Open a new terminal and cd to the root project folder (/.ww)
+4. Open a new terminal and cd to the root project folder (/.workMarket)
 ```sh
 node nightwatch.js tests/test2.js
 ```
