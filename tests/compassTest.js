@@ -92,8 +92,9 @@ var returnURL = function(driver)
 	{
 		console.log(uniqueLocation[i])
 		var k = uniqueLocation[i]
-	driver.click("(//div[@class='ag-row ag-row-no-focus ag-row-no-animation ag-row-level-0 ag-row-even']/div[3])["+k+"]")
-	.pause(3000)
+		driver.pause(2000)
+	driver.click("(//div[@colid='listing.location.address'])["+(k+1)+"]")
+	driver.pause(3000)
 	//driver.waitForElementVisible("//a[@class='uc-listingNavigation-externalLink uc-listingNavigation-btn cx-nakedBtn cx-nakedBtn--sm']",3000)
 	driver.getAttribute("//a[@class='uc-listingNavigation-externalLink uc-listingNavigation-btn cx-nakedBtn cx-nakedBtn--sm']","href",function(url)
 	{console.log(url.value)})

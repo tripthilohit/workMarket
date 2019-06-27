@@ -5,9 +5,9 @@
 
   <testsuite name="compassTest"
     errors="0" failures="0" hostname="" id="" package="compassTest" skipped="0"
-    tests="5" time="28.71" timestamp="">
+    tests="5" time="37.67" timestamp="">
   
-    <testcase name="login" classname="compassTest" time="5.731" assertions="3">
+    <testcase name="login" classname="compassTest" time="4.674" assertions="3">
 
     
 
@@ -16,20 +16,20 @@
     
     </testcase>
   
-    <testcase name="getLocation" classname="compassTest" time="7.508" assertions="2">
+    <testcase name="getLocation" classname="compassTest" time="7.479" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="printLocation" classname="compassTest" time="0.001000" assertions="0">
+    <testcase name="printLocation" classname="compassTest" time="0.000" assertions="0">
     </testcase>
   
-    <testcase name="getUniqueLocationIndex" classname="compassTest" time="0.002000" assertions="0">
+    <testcase name="getUniqueLocationIndex" classname="compassTest" time="0.001000" assertions="0">
     </testcase>
   
-    <testcase name="returnURL" classname="compassTest" time="15.47" assertions="0">
+    <testcase name="returnURL" classname="compassTest" time="25.51" assertions="0">
     </testcase>
   
 
