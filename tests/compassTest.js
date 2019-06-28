@@ -1,14 +1,3 @@
-
-/*globals
-homeURL: 'https://www.compass.com/',
-  compassEmail: 'compass9012@gmail.com',
-  compassPassword: 'Takehome1234567890',
-  nycSalesListURL: 'https://www.compass.com/search/sales/nyc',
-  listingCount: 5
-  */
-
-
-
 var allLocation = []	//array to store all location values
 var uniqueLocationIndex = [] //array to store all the indexes of top unique locations
 
